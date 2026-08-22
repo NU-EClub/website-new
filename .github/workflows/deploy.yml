@@ -10,9 +10,13 @@ permissions:
   pages: write
   id-token: write
 
+# One deploy at a time. Never cancel a running deploy -- interrupting
+# actions/deploy-pages can leave the Pages deployment half-applied. Bursts of
+# rapid triggers coalesce in the single pending slot: the newest evicts the
+# older, so a flurry of edits collapses into one follow-up build.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
