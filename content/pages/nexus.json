@@ -6,27 +6,23 @@
     "body": "If you don't want to commit to a semester-long program but you're still curious about startups, or you want to expand your network, Nexus is where to start.\n\nIt's also where founders in Spark and Bolt come to network and get wider exposure."
   },
   "sections": {
-    "our-events": {
+    "offerings": {
       "heading": "Our Events",
       "lede": "",
       "items": [
         {
-          "key": "workshops",
           "label": "Workshops & Panels",
           "text": "Hands-on sessions and fireside chats, open to everyone."
         },
         {
-          "key": "networking",
           "label": "Networking Events",
           "text": "Meet other founders, students, and people already building."
         },
         {
-          "key": "hackathon",
           "label": "Ideation Hackathon",
           "text": "Go from a blank page to an idea worth pursuing in a day."
         },
         {
-          "key": "pitch",
           "label": "Pitch Competition",
           "text": "Put an early idea in front of a room and see how it holds up."
         }

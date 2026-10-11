@@ -140,7 +140,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Name", type: string }
                   - { name: sublabel, label: "Role", type: string }
                   - { name: text, label: "Quote", type: text }
@@ -174,7 +173,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Label", type: string }
                   - { name: text, label: "Body (optional)", type: text }
           - name: timeline
@@ -188,7 +186,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Label", type: string }
                   - { name: text, label: "Body (optional)", type: text }
 
@@ -221,7 +218,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Label", type: string }
                   - { name: text, label: "Body (optional)", type: text }
           - name: provide
@@ -235,7 +231,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Label", type: string }
                   - { name: text, label: "Body (optional)", type: text }
 
@@ -257,8 +252,8 @@ content:
         label: "Page sections"
         type: object
         fields:
-          - name: our-events
-            label: "Our Events band"
+          - name: offerings
+            label: "Programme offerings band"
             type: object
             fields:
               - { name: heading, label: "Heading", type: string }
@@ -268,7 +263,6 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: key, label: "Key - do not change", type: string, readonly: true }
                   - { name: label, label: "Label", type: string }
                   - { name: text, label: "Body (optional)", type: text }
           - name: fc-cta

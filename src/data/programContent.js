@@ -69,7 +69,7 @@ const SPEC = {
     missionAlign: 'left',
     events: true,
     sections: {
-      'our-events': { type: 'features', tone: 'accent' },
+      offerings: { type: 'features', tone: 'accent' },
       'fc-cta': { type: 'cta', tone: 'accent', to: '/programs/founder-circle' },
     },
   },

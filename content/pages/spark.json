@@ -11,27 +11,22 @@
       "lede": "",
       "items": [
         {
-          "key": "bootcamps",
           "label": "Weekly Bootcamps",
           "text": "Weekly sessions covering idea generation, customer and market research, and pitching."
         },
         {
-          "key": "ideation",
           "label": "Ideation & User Discovery",
           "text": "Find a problem worth solving and talk to the people who have it."
         },
         {
-          "key": "pitching",
           "label": "Pitching Fundamentals",
           "text": "Turn what you have learned into a pitch that lands."
         },
         {
-          "key": "showcase",
           "label": "End-of-Semester Showcase",
           "text": "Eight finalist teams compete for $10,000 at Demo Day."
         },
         {
-          "key": "office-hours",
           "label": "Office Hours for Builders",
           "text": "Drop-in time with the team while you build."
         }
@@ -42,22 +37,18 @@
       "lede": "From info session to Demo Day — here's what a semester in Spark looks like.",
       "items": [
         {
-          "key": "info",
           "label": "Info session",
           "text": ""
         },
         {
-          "key": "bootcamps",
           "label": "Bootcamps",
           "text": ""
         },
         {
-          "key": "prototype",
           "label": "Prototype & Pitch Deck",
           "text": ""
         },
         {
-          "key": "demo-day",
           "label": "Demo Day",
           "text": ""
         }

@@ -53,8 +53,8 @@ function Features({ section }) {
       <div className="shell p-band__inner">
         <h2 className="p-band__heading">{section.heading}</h2>
         <ul className="p-features">
-          {section.items.map((it) => (
-            <li key={it.name}>
+          {section.items.map((it, i) => (
+            <li key={i}>
               <h3>{it.name}</h3>
               {it.body && <p>{it.body}</p>}
             </li>
@@ -92,7 +92,7 @@ function Timeline({ section }) {
         {section.lede && <p className="p-band__lede">{section.lede}</p>}
         <ol className="p-timeline">
           {section.steps.map((s, i) => (
-            <li key={s.name}>
+            <li key={i}>
               <span className="p-timeline__marker" aria-hidden="true">{i + 1}</span>
               <div>
                 <h3>{s.name}</h3>
@@ -136,8 +136,8 @@ function Quotes({ section }) {
     <section className="p-quotes shell">
       <h2 className="p-quotes__heading">{section.heading}</h2>
       <div className="p-quotes__grid">
-        {section.items.map((q) => (
-          <figure className="p-quote" key={q.name + q.quote.slice(0, 20)}>
+        {section.items.map((q, i) => (
+          <figure className="p-quote" key={i}>
             <div className="p-quote__who">
               <img src={asset(q.avatar)} alt="" width="80" height="80" loading="lazy" />
               <figcaption>

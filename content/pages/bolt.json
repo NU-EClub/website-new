@@ -11,22 +11,18 @@
       "lede": "",
       "items": [
         {
-          "key": "users",
           "label": "An active, growing user base",
           "text": ""
         },
         {
-          "key": "revenue",
           "label": "Revenue, even early or small",
           "text": ""
         },
         {
-          "key": "funding",
           "label": "Outside funding — pre-seed, seed or grants",
           "text": ""
         },
         {
-          "key": "traction",
           "label": "Strong traction in a pilot, partnership, or beta",
           "text": ""
         }
@@ -37,32 +33,26 @@
       "lede": "",
       "items": [
         {
-          "key": "sessions",
           "label": "Biweekly Cohort Meetings",
           "text": "Work through goals alongside the other ventures in your batch."
         },
         {
-          "key": "office-hours",
           "label": "Office Hours with Directors",
           "text": "Direct time with the program directors."
         },
         {
-          "key": "speakers",
           "label": "Speaker Series",
           "text": "Sessions with founders and investors relevant to what you are building."
         },
         {
-          "key": "grants",
           "label": "Cash Grants",
           "text": "Funding to put toward your venture."
         },
         {
-          "key": "mentors",
           "label": "Mentor Network",
           "text": "Directors include exited founders, former VC co-ops, and a Z Fellow."
         },
         {
-          "key": "demo-day",
           "label": "A Separate Demo Day",
           "text": "Reserved seats for industry professionals, VCs, and founders relevant to your venture — with interest already from firms like Glasswing, Underscore, and Offscript."
         }
