@@ -1,0 +1,106 @@
+.programs {
+  background: var(--c-black);
+  color: var(--c-white);
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(4rem, 9vw, 7.5rem);
+}
+
+.programs__inner {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.programs__title {
+  font-size: var(--fs-display);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.programs__lead {
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  line-height: 1.15;
+  max-width: 22ch;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.programs__grid {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.75rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The HSC umbrella spans the full row; its children sit inside it. */
+.hsc-card {
+  grid-column: 1 / -1;
+  border: 1px solid var(--c-white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.hsc-card__head { padding: clamp(1.5rem, 3vw, 2.75rem); }
+
+.hsc-card__name {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.hsc-card__blurb {
+  font-size: var(--fs-body);
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+.hsc-card__halves {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hsc-half,
+.program-card {
+  background: var(--card-bg);
+  color: var(--card-fg);
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  /* Comp puts the title near the top of the card, not the baseline */
+  justify-content: flex-start;
+  transition: filter 150ms ease, transform 150ms ease;
+}
+
+.hsc-half:hover,
+.program-card:hover { filter: brightness(1.06); }
+
+.hsc-half:focus-visible,
+.program-card:focus-visible {
+  outline: 3px solid var(--c-white);
+  outline-offset: -6px;
+}
+
+.program-card {
+  border-radius: var(--radius-card);
+  min-height: 420px;
+}
+
+.hsc-half__name,
+.program-card__name {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.hsc-half__blurb,
+.program-card__blurb {
+  font-size: var(--fs-body);
+  margin-top: 0.5rem;
+  max-width: 34ch;
+}
+
+@media (max-width: 720px) {
+  .programs__grid,
+  .hsc-card__halves { grid-template-columns: minmax(0, 1fr); }
+  .program-card { min-height: 300px; }
+}

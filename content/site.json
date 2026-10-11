@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "headlineBefore": "Educating, inspiring and ",
+    "headlineEmphasis": "empowering",
+    "headlineAfter": " Northeastern University's students."
+  },
+  "mission": {
+    "title": "Entrepreneurship Club is Northeastern's Largest Student-led Organization.",
+    "body": "We have 4 programs, 2,000+ active members, and over 30 events each semester. We connect students with resources and speakers—including venture capitalists, industry leaders, and co-founders—to explore career paths and foster an entrepreneurial mindset."
+  },
+  "programs": {
+    "title": "Our Programs",
+    "lede": "Five ways to get involved, from your first idea to your first cap table."
+  },
+  "newsTitle": "News",
+  "calendarTitle": "Calendar",
+  "footer": {
+    "cta": "Interested in working with us?",
+    "buttonLabel": "Get in Touch",
+    "org": "Northeastern University"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Spark",
+  "lede": "No prior experience or traction required — just curiosity and a willingness to build.",
+  "mission": {
+    "heading": "",
+    "body": "A semester-long foundation for students just starting to explore entrepreneurship — where curiosity turns into something real."
+  },
+  "sections": {
+    "how-it-works": {
+      "heading": "How it Works",
+      "lede": "",
+      "items": [
+        {
+          "key": "bootcamps",
+          "label": "Weekly Bootcamps",
+          "text": ""
+        },
+        {
+          "key": "ideation",
+          "label": "Ideation & User Discovery",
+          "text": ""
+        },
+        {
+          "key": "pitching",
+          "label": "Pitching Fundamentals",
+          "text": ""
+        },
+        {
+          "key": "showcase",
+          "label": "End-of-Semester Showcase",
+          "text": ""
+        },
+        {
+          "key": "office-hours",
+          "label": "Office Hours for Builders",
+          "text": ""
+        }
+      ]
+    },
+    "timeline": {
+      "heading": "Timeline",
+      "lede": "From info session to Demo Day — here's what a semester in HSC looks like.",
+      "items": [
+        {
+          "key": "info",
+          "label": "Info session",
+          "text": ""
+        },
+        {
+          "key": "bootcamps",
+          "label": "Bootcamps",
+          "text": ""
+        },
+        {
+          "key": "prototype",
+          "label": "Prototype & Pitch Deck",
+          "text": ""
+        },
+        {
+          "key": "demo-day",
+          "label": "Demo Day",
+          "text": ""
+        }
+      ]
+    }
+  }
+}

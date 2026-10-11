@@ -1,0 +1,72 @@
+{
+  "title": "Bolt",
+  "lede": "Northeastern's premier startup accelerator — built for founders who've already proven there's something real.",
+  "mission": {
+    "heading": "Why it's exclusive",
+    "body": "Founders apply and interview for a spot. Only a small cohort is admitted each cycle. That selectivity means that every conversation is high signal and the network you walk away with is one worth having."
+  },
+  "sections": {
+    "criteria": {
+      "heading": "Who We're Looking For",
+      "lede": "",
+      "items": [
+        {
+          "key": "users",
+          "label": "An active, growing user base",
+          "text": ""
+        },
+        {
+          "key": "revenue",
+          "label": "Revenue, even early or small",
+          "text": ""
+        },
+        {
+          "key": "funding",
+          "label": "Outside funding — pre-seed, seed or grants",
+          "text": ""
+        },
+        {
+          "key": "traction",
+          "label": "Strong traction in a pilot, partnership, or beta",
+          "text": ""
+        }
+      ]
+    },
+    "provide": {
+      "heading": "What We Provide",
+      "lede": "",
+      "items": [
+        {
+          "key": "sessions",
+          "label": "Biweekly Learning Sessions",
+          "text": ""
+        },
+        {
+          "key": "office-hours",
+          "label": "Office Hours with Directors",
+          "text": ""
+        },
+        {
+          "key": "speakers",
+          "label": "Speaker Series",
+          "text": ""
+        },
+        {
+          "key": "grants",
+          "label": "Cash Grants",
+          "text": ""
+        },
+        {
+          "key": "mentors",
+          "label": "Mentor Network",
+          "text": ""
+        },
+        {
+          "key": "demo-day",
+          "label": "Demo Day / Capstone Showcase",
+          "text": ""
+        }
+      ]
+    }
+  }
+}

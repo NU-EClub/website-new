@@ -1,0 +1,110 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--c-white);
+  height: 99px;
+}
+
+.site-header__inner {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  height: 100%;
+  padding-inline: clamp(1rem, 2vw, 28px);
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3rem);
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+}
+
+.site-header__logo { width: 57px; height: auto; }
+
+.site-header__wordmark {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2.5vw, 2.5rem);
+  margin-inline: auto;
+}
+
+.site-nav__group { position: relative; }
+
+.site-nav__pill {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  color: var(--c-black);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.site-nav__pill:hover,
+.site-nav__pill:focus-visible { background: rgb(0 0 0 / 0.06); }
+
+.site-nav__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  /* see __menu::before -- the visual gap must stay inside the hover target */
+  left: 0;
+  min-width: 190px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background: var(--c-white);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgb(0 0 0 / 0.14);
+  display: none;
+}
+
+/* The 6px offset above is a visual gap only. Without this bridge the pointer
+ * leaves .site-nav__group on the way from the pill to the menu and the
+ * dropdown closes out from under the cursor. */
+.site-nav__menu::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: -6px;
+  height: 6px;
+}
+
+.site-nav__menu[data-open] { display: block; }
+
+.site-nav__menu-item {
+  display: block;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: var(--c-ink);
+}
+
+.site-nav__menu-item:hover,
+.site-nav__menu-item:focus-visible { background: rgb(0 0 0 / 0.06); }
+
+.site-header__social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+}
+
+.site-header__social img { width: 24px; height: 24px; }
+
+@media (max-width: 900px) {
+  .site-nav { gap: 0.25rem; }
+  .site-nav__pill { padding: 6px 8px; font-size: 14px; }
+  .site-header__wordmark { display: none; }
+}

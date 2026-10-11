@@ -1,0 +1,38 @@
+{
+  "title": "Husky Startup Challenge",
+  "lede": "Northeastern's official venture incubator program and premier pitch competition.",
+  "mission": {
+    "heading": "",
+    "body": "HSC is a semester-long incubator and pitch competition for Northeastern student founders across all majors, programs, or backgrounds."
+  },
+  "sections": {
+    "tracks": {
+      "heading": "Bolt & Spark",
+      "lede": "",
+      "items": [
+        {
+          "key": "bolt",
+          "label": "Bolt",
+          "text": "For founders with traction"
+        },
+        {
+          "key": "spark",
+          "label": "Spark",
+          "text": "For students just getting started"
+        }
+      ]
+    },
+    "quotes": {
+      "heading": "From Past Contestants",
+      "lede": "",
+      "items": [
+        {
+          "key": "keith",
+          "label": "Keith Corso",
+          "sublabel": "Founder, BusRight",
+          "text": "HSC gave us the space and structure to explore our customers, market, and industry at large. None of this would have been possible without the early support and validation provided to us through the HSC program and community."
+        }
+      ]
+    }
+  }
+}

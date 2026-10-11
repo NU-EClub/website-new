@@ -1,0 +1,287 @@
+# Pages CMS configuration — https://pagescms.org/docs/
+#
+# Editors sign in at app.pagescms.org with a GitHub account that has write
+# access to this repo. Saving writes a commit to `main`, which triggers
+# .github/workflows/deploy.yml and republishes the site in ~2 minutes.
+#
+# Only prose is exposed here. Structure -- section order, colour bands, which
+# renderer a section uses -- lives in src/data/programContent.js and is
+# deliberately NOT editable: it is not copy, and breaking it breaks a page.
+
+media:
+  input: public/assets
+  output: /website-new/assets
+  categories: [image]
+
+content:
+  - name: site
+    label: Site-wide copy
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Homepage hero
+        type: object
+        fields:
+          - { name: headlineBefore, label: "Headline: before emphasis", type: string }
+          - { name: headlineEmphasis, label: "Emphasised word", type: string }
+          - { name: headlineAfter, label: "Headline: after emphasis", type: string }
+      - name: mission
+        label: Mission block
+        type: object
+        fields:
+          - { name: title, label: "Heading", type: text }
+          - { name: body, label: "Body", type: text }
+      - name: programs
+        label: Programs section intro
+        type: object
+        fields:
+          - { name: title, label: "Heading", type: string }
+          - { name: lede, label: "Lede", type: text }
+      - { name: newsTitle, label: "News heading", type: string }
+      - { name: calendarTitle, label: "Calendar heading", type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: cta, label: "Call to action", type: string }
+          - { name: buttonLabel, label: "Button label", type: string }
+          - { name: org, label: "Organisation line", type: string }
+
+  - name: programs
+    label: Program names & blurbs
+    type: file
+    path: content/programs.json
+    format: json
+    list: true
+    fields:
+      - { name: slug, label: "Slug (do not change)", type: string, readonly: true }
+      - { name: name, label: "Name", type: string }
+      - { name: blurb, label: "Card blurb", type: text }
+
+  - name: events
+    label: Events calendar
+    type: file
+    path: content/events.json
+    format: json
+    fields:
+      - { name: month, label: "Month", type: string }
+      - name: events
+        label: Events
+        type: object
+        list: true
+        fields:
+          - { name: day, label: "Day", type: string }
+          - { name: weekday, label: "Weekday", type: string }
+          - { name: time, label: "Time", type: string }
+          - { name: title, label: "Title", type: string }
+          - { name: description, label: "Description", type: text }
+          - { name: image, label: "Image", type: image }
+
+  - name: news
+    label: News items
+    type: file
+    path: content/news.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: "ID", type: string }
+      - { name: title, label: "Title", type: string }
+      - { name: image, label: "Image", type: image }
+
+  - name: page-hsc
+    label: "Program page: HSC"
+    type: file
+    path: content/pages/hsc.json
+    format: json
+    fields:
+      - { name: title, label: "Page title", type: string }
+      - { name: lede, label: "Hero lede", type: text }
+      - name: mission
+        label: "Mission block"
+        type: object
+        fields:
+          - { name: heading, label: "Heading (optional)", type: string }
+          - { name: body, label: "Body - blank line starts a new paragraph", type: text }
+      - name: sections
+        label: "Page sections"
+        type: object
+        fields:
+          - name: tracks
+            label: "Bolt and Spark band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+          - name: quotes
+            label: "Testimonials band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Name", type: string }
+                  - { name: sublabel, label: "Role", type: string }
+                  - { name: text, label: "Quote", type: text }
+
+  - name: page-spark
+    label: "Program page: Spark"
+    type: file
+    path: content/pages/spark.json
+    format: json
+    fields:
+      - { name: title, label: "Page title", type: string }
+      - { name: lede, label: "Hero lede", type: text }
+      - name: mission
+        label: "Mission block"
+        type: object
+        fields:
+          - { name: heading, label: "Heading (optional)", type: string }
+          - { name: body, label: "Body - blank line starts a new paragraph", type: text }
+      - name: sections
+        label: "Page sections"
+        type: object
+        fields:
+          - name: how-it-works
+            label: "How it Works band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+          - name: timeline
+            label: "Timeline band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+
+  - name: page-bolt
+    label: "Program page: Bolt"
+    type: file
+    path: content/pages/bolt.json
+    format: json
+    fields:
+      - { name: title, label: "Page title", type: string }
+      - { name: lede, label: "Hero lede", type: text }
+      - name: mission
+        label: "Mission block"
+        type: object
+        fields:
+          - { name: heading, label: "Heading (optional)", type: string }
+          - { name: body, label: "Body - blank line starts a new paragraph", type: text }
+      - name: sections
+        label: "Page sections"
+        type: object
+        fields:
+          - name: criteria
+            label: "Who We Are Looking For band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+          - name: provide
+            label: "What We Provide band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+
+  - name: page-nexus
+    label: "Program page: Nexus"
+    type: file
+    path: content/pages/nexus.json
+    format: json
+    fields:
+      - { name: title, label: "Page title", type: string }
+      - { name: lede, label: "Hero lede", type: text }
+      - name: mission
+        label: "Mission block"
+        type: object
+        fields:
+          - { name: heading, label: "Heading (optional)", type: string }
+          - { name: body, label: "Body - blank line starts a new paragraph", type: text }
+      - name: sections
+        label: "Page sections"
+        type: object
+        fields:
+          - name: our-events
+            label: "Our Events band"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+              - name: items
+                label: "Items"
+                type: object
+                list: true
+                fields:
+                  - { name: key, label: "Key - do not change", type: string, readonly: true }
+                  - { name: label, label: "Label", type: string }
+                  - { name: text, label: "Body (optional)", type: text }
+          - name: fc-cta
+            label: "Founder Circle call-to-action"
+            type: object
+            fields:
+              - { name: heading, label: "Heading", type: string }
+              - { name: lede, label: "Lede", type: text }
+
+  - name: page-founder-circle
+    label: "Program page: Founder Circle"
+    type: file
+    path: content/pages/founder-circle.json
+    format: json
+    fields:
+      - { name: title, label: "Page title", type: string }
+      - { name: lede, label: "Hero lede", type: text }
+      - name: mission
+        label: "Mission block"
+        type: object
+        fields:
+          - { name: heading, label: "Heading (optional)", type: string }
+          - { name: body, label: "Body - blank line starts a new paragraph", type: text }

@@ -1,0 +1,51 @@
+/* ---- Mission ---- */
+.mission { padding-block: clamp(3rem, 7vw, 7.3rem); }
+
+.mission__title {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 1200px;
+  text-wrap: balance;
+}
+
+.mission__body {
+  margin-top: clamp(1.5rem, 3vw, 3.2rem);
+  font-size: var(--fs-lead);
+  line-height: 1.35;
+  max-width: 1258px;
+}
+
+/* ---- News ---- */
+.news { padding-block: clamp(2rem, 5vw, 6rem) clamp(3rem, 8vw, 8rem); }
+
+.news__title {
+  font-size: var(--fs-display);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.news__grid {
+  list-style: none;
+  margin: clamp(2rem, 5vw, 4.5rem) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 4rem);
+}
+
+.news-card__image {
+  width: 100%;
+  aspect-ratio: 549 / 320;
+  object-fit: cover;
+}
+
+.news-card__title {
+  margin-top: clamp(0.75rem, 2vw, 1.8rem);
+  font-size: clamp(1.125rem, 2.5vw, 2.25rem);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .news__grid { grid-template-columns: minmax(0, 1fr); }
+}

@@ -1,0 +1,38 @@
+.hero {
+  position: relative;
+  height: clamp(420px, 66vw, 960px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Keeps the headline legible over arbitrary video frames */
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.55) 0%, rgb(0 0 0 / 0) 45%);
+}
+
+.hero__headline {
+  position: relative;
+  max-width: 924px;
+  margin: 0 auto clamp(2rem, 6vw, 5.75rem);
+  padding-inline: var(--gutter);
+  font-size: clamp(1.375rem, 2.8vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--c-white);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero__headline em { font-weight: 700; font-style: italic; }

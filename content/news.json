@@ -1,0 +1,5 @@
+[
+  { "id": "n1", "title": "Lorem ipsum dolor", "image": "news-1.jpg" },
+  { "id": "n2", "title": "Lorem ipsum dolor", "image": "news-2.jpg" },
+  { "id": "n3", "title": "Lorem ipsum dolor", "image": "news-3.jpg" }
+]

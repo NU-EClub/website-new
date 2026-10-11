@@ -1,0 +1,40 @@
+{
+  "title": "Nexus",
+  "lede": "Events, workshops, and community for anyone curious about entrepreneurship — no application, no commitment required.",
+  "mission": {
+    "heading": "The On-Ramp to Everything Else",
+    "body": "Plenty of students are curious about entrepreneurship but aren't ready for a semester-long program yet. Nexus gives them a way in.\n\nIt's also where founders in Spark and Bolt come to network and get wider exposure."
+  },
+  "sections": {
+    "our-events": {
+      "heading": "Our Events",
+      "lede": "",
+      "items": [
+        {
+          "key": "workshops",
+          "label": "Workshops & Panels",
+          "text": ""
+        },
+        {
+          "key": "networking",
+          "label": "Networking Events",
+          "text": ""
+        },
+        {
+          "key": "hackathon",
+          "label": "Ideation Hackathon",
+          "text": ""
+        },
+        {
+          "key": "pitch",
+          "label": "Pitch Competition",
+          "text": ""
+        }
+      ]
+    },
+    "fc-cta": {
+      "heading": "Explore Founder Circle",
+      "lede": "Ongoing mentorship, under Nexus"
+    }
+  }
+}

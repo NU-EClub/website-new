@@ -1,0 +1,57 @@
+/* Brand tokens — sourced from the E-Club Brand Guidelines Figma
+ * (file PsyaaUo8rEgEPu0TpBBijN, "Program Guidelines" section).
+ *
+ * NOTE: the org is mid-rebrand. The guide's own slide headers still carry
+ * internal names -- the slide titled "VENTURE DEV / SPARK" describes Spark as
+ * founder development in its body copy. Public-facing names only in this
+ * codebase: Spark and Bolt are sibling programs under the HSC umbrella.
+ */
+
+:root {
+  --c-black: #000000;
+  --c-white: #ffffff;
+  --c-ink: #111111;
+
+  /* Program primaries, taken from each program's OWN slide in the guide --
+   * not the master palette slide, which lists a stale "Bolt Red #FE6136" that
+   * matches neither of Bolt's actual swatches. Nexus's slide is still titled
+   * "Engage" (pre-rebrand) but its value agrees. */
+  --c-nexus-blue: #27a8e0;   /* "Picton Blue" */
+  --c-bolt-red: #e7262e;     /* "Red" -- the primary, not "Tomato" */
+  --c-eclub-purple: #9131ff;
+  --c-spark-yellow: #ffc720; /* "Yellow" */
+
+  /* Program secondaries, unused so far but part of each program's pair */
+  --c-bolt-tomato: #ff5730;
+  --c-spark-lemon: #ffdb4c;
+  --c-nexus-mas-blue: #3c29a4;
+
+  /* Per-program background + matched foreground.
+   * HSC has no primary of its own in the guide: it is the umbrella, and its
+   * card is the container holding the Spark and Bolt halves. */
+  --c-program-spark: var(--c-spark-yellow);
+  --c-on-spark: var(--c-black);
+  --c-program-bolt: var(--c-bolt-red);
+  --c-on-bolt: var(--c-white);
+  /* Picton Blue is light: white on it is 2.7:1 and fails WCAG AA outright.
+   * The comp got away with white because the cards sat on darkened photos --
+   * on a solid fill the text has to go dark, as it does on Spark. */
+  --c-program-nexus: var(--c-nexus-blue);
+  --c-on-nexus: var(--c-black);
+  /* Founder Circle lives under Nexus, so it takes Nexus's secondary rather
+   * than a colour of its own -- see the note in data/programs.js. */
+  --c-program-founder-circle: var(--c-nexus-mas-blue);
+  --c-on-founder-circle: var(--c-white);
+
+  /* Type scale — design is drawn at 1440px; these fluidly track it */
+  --fs-display: clamp(2.75rem, 6.7vw, 6rem);    /* 96px @1440 */
+  --fs-h1: clamp(2rem, 4.4vw, 4rem);            /* 64px */
+  --fs-h2: clamp(1.75rem, 3.8vw, 3.4375rem);    /* 55px */
+  --fs-h3: clamp(1.5rem, 3.3vw, 3rem);          /* 48px */
+  --fs-lead: clamp(1.125rem, 2.2vw, 2rem);      /* 32px */
+  --fs-body: clamp(1rem, 1.7vw, 1.5rem);        /* 24px */
+
+  --page-max: 1440px;
+  --gutter: clamp(1.25rem, 5vw, 7.5rem);
+  --radius-card: 32px;
+}

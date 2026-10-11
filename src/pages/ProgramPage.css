@@ -1,0 +1,288 @@
+/* ---- Hero: full-bleed photo, per every program comp ---- */
+.p-hero {
+  position: relative;
+  min-height: clamp(420px, 62vw, 960px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.p-hero__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The comps set white type straight onto the photo; this keeps it legible
+ * regardless of which frame sits behind it. */
+.p-hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgb(0 0 0 / 0.62) 0%, rgb(0 0 0 / 0.28) 55%, rgb(0 0 0 / 0.1) 100%);
+}
+
+.p-hero__inner { position: relative; width: 100%; color: var(--c-white); }
+
+.p-hero__crumbs {
+  font-size: var(--fs-lead);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.p-hero__sep { margin-right: 0.35rem; opacity: 0.7; }
+
+.p-hero__title {
+  margin-top: clamp(0.5rem, 1.5vw, 1rem);
+  font-size: clamp(3rem, 8.9vw, 8rem);   /* 128px @1440 */
+  font-weight: 800;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.p-hero__lede {
+  margin-top: clamp(1rem, 3vw, 2.5rem);
+  font-size: var(--fs-lead);
+  line-height: 1.3;
+  max-width: 46ch;
+  text-wrap: pretty;
+}
+
+.p-hero__cta {
+  display: inline-block;
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: var(--c-white);
+  color: var(--c-black);
+  font-weight: 600;
+}
+
+.p-hero__cta:hover { background: rgb(255 255 255 / 0.86); }
+
+/* ---- Mission ---- */
+.p-mission { padding-block: clamp(2.5rem, 7vw, 7rem); }
+.p-mission--center { text-align: center; }
+
+.p-mission--center .p-mission__body,
+.p-mission--center .p-mission__heading { margin-inline: auto; max-width: 1206px; }
+
+.p-mission__heading {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.p-mission--center .p-mission__body {
+  font-size: clamp(1.5rem, 3.6vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+/* When the comp gives the block its own heading (Bolt), the body drops to a
+ * regular weight underneath it rather than being the statement itself. */
+.p-mission--center .p-mission__heading + .p-mission__body {
+  margin-top: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.125rem, 2.8vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.p-mission--left .p-mission__body {
+  margin-top: clamp(1rem, 2.5vw, 2rem);
+  font-size: var(--fs-lead);
+  line-height: 1.35;
+  max-width: 62ch;
+}
+
+.p-mission--left .p-mission__body + .p-mission__body { margin-top: 1.25rem; }
+
+/* ---- Colour bands ---- */
+.p-band { padding-block: clamp(2.5rem, 7vw, 6.5rem); }
+.p-band--accent { background: var(--accent); color: var(--on-accent); }
+.p-band--black { background: var(--c-black); color: var(--c-white); }
+.p-band--white { background: var(--c-white); color: var(--c-black); }
+
+.p-band__inner { position: relative; }
+
+.p-band__heading {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.p-band__lede {
+  margin-top: clamp(0.75rem, 2vw, 1.5rem);
+  font-size: var(--fs-lead);
+  max-width: 60ch;
+}
+
+/* Small screenshot the comps float at the edge of a band */
+.p-band__aside {
+  position: absolute;
+  top: 0;
+  /* .shell's padding box is the containing block, so right:0 would sit out in
+   * the gutter -- inset by the gutter to line up with the content edge */
+  right: var(--gutter);
+  width: clamp(120px, 18vw, 240px);
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) { .p-band__aside { display: none; } }
+
+/* ---- Feature list ---- */
+.p-features {
+  list-style: none;
+  margin: clamp(1.75rem, 4vw, 3.5rem) 0 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1100px;
+}
+
+.p-features h3 {
+  font-size: clamp(1.25rem, 2.8vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.p-features p { margin-top: 0.5rem; font-size: var(--fs-body); line-height: 1.35; }
+
+/* ---- Criteria (Bolt) ---- */
+.p-criteria {
+  list-style: none;
+  margin: clamp(1.75rem, 4vw, 3rem) 0 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  max-width: 900px;
+  /* the comp draws a rule down the left of this list */
+  border-left: 3px solid currentColor;
+  padding-left: clamp(1rem, 2.5vw, 2rem);
+}
+
+.p-criteria li { font-size: clamp(1.125rem, 2.5vw, 2.25rem); line-height: 1.25; }
+
+/* ---- Timeline ---- */
+.p-timeline {
+  list-style: none;
+  margin: clamp(1.75rem, 4vw, 3.5rem) 0 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 1000px;
+}
+
+.p-timeline li { display: flex; gap: clamp(1rem, 2.5vw, 2rem); align-items: flex-start; }
+
+.p-timeline__marker {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: clamp(52px, 7vw, 92px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  font-size: clamp(1.25rem, 2.6vw, 2.25rem);
+  font-weight: 700;
+}
+
+.p-timeline h3 { font-size: clamp(1.25rem, 2.5vw, 2.25rem); font-weight: 700; line-height: 1.15; }
+.p-timeline p { margin-top: 0.5rem; font-size: var(--fs-body); line-height: 1.35; }
+
+/* ---- Split (HSC -> Bolt & Spark) ---- */
+.p-split {
+  margin-top: clamp(1.75rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.p-split__col img {
+  width: 100%;
+  max-width: 530px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.p-split__col h3 {
+  margin-top: clamp(1rem, 3vw, 2.5rem);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.p-split__col p {
+  margin-top: 0.75rem;
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.p-split__col:hover p { text-decoration: underline; }
+
+/* ---- Quotes ---- */
+.p-quotes { padding-block: clamp(2.5rem, 7vw, 6rem); }
+
+.p-quotes__heading { font-size: var(--fs-h1); font-weight: 700; line-height: 1.1; }
+
+.p-quotes__grid {
+  margin-top: clamp(1.75rem, 4vw, 3rem);
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.p-quote {
+  background: var(--c-black);
+  color: var(--c-white);
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  border-radius: 12px;
+}
+
+.p-quote__who { display: flex; align-items: center; gap: clamp(0.75rem, 2vw, 1.5rem); }
+
+.p-quote__who img { width: clamp(56px, 7vw, 88px); height: auto; border-radius: 50%; }
+
+.p-quote figcaption { font-size: clamp(1rem, 1.9vw, 1.6rem); }
+
+.p-quote blockquote {
+  margin: clamp(1rem, 2.5vw, 2rem) 0 0;
+  font-size: clamp(1rem, 1.9vw, 1.6rem);
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+/* ---- CTA band ---- */
+.p-cta__inner { display: block; }
+.p-cta h2 { font-size: clamp(1.75rem, 3.8vw, 3.4rem); font-weight: 800; line-height: 1.1; }
+.p-cta p { margin-top: 0.5rem; font-size: var(--fs-h3); font-weight: 500; }
+.p-cta__inner:hover p { text-decoration: underline; }
+
+/* ---- Full-width image band ---- */
+.p-imageband { padding-block: clamp(1.5rem, 4vw, 3rem); }
+.p-imageband img { width: 100%; aspect-ratio: 1294 / 479; object-fit: cover; border-radius: 12px; }
+
+/* ---- Misc ---- */
+.program-page__notice {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: rgb(0 0 0 / 0.05);
+  font-size: 0.95rem;
+}
+
+.program-page__back { padding-block: clamp(1.5rem, 4vw, 3rem) clamp(3rem, 7vw, 5rem); }
+.program-page__back a { font-size: var(--fs-body); }
+.program-page__back a:hover { text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .p-split { grid-template-columns: minmax(0, 1fr); }
+}
