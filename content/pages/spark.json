@@ -1,9 +1,9 @@
 {
   "title": "Spark",
-  "lede": "No prior experience or traction required — just curiosity and a willingness to build.",
+  "lede": "E-Club's semester-long startup incubator and pitch competition — for early-stage founders and anyone curious about startups, whatever your experience level.",
   "mission": {
-    "heading": "",
-    "body": "A semester-long foundation for students just starting to explore entrepreneurship — where curiosity turns into something real."
+    "heading": "No application required",
+    "body": "Spark is open to everyone, regardless of major, degree program, or experience. At our weekly bootcamps we cover how to come up with a good idea, do customer and market research, and eventually how to pitch.\n\nAt the end of the semester, eight finalist teams compete for $10,000 at Demo Day."
   },
   "sections": {
     "how-it-works": {
@@ -13,33 +13,33 @@
         {
           "key": "bootcamps",
           "label": "Weekly Bootcamps",
-          "text": ""
+          "text": "Weekly sessions covering idea generation, customer and market research, and pitching."
         },
         {
           "key": "ideation",
           "label": "Ideation & User Discovery",
-          "text": ""
+          "text": "Find a problem worth solving and talk to the people who have it."
         },
         {
           "key": "pitching",
           "label": "Pitching Fundamentals",
-          "text": ""
+          "text": "Turn what you have learned into a pitch that lands."
         },
         {
           "key": "showcase",
           "label": "End-of-Semester Showcase",
-          "text": ""
+          "text": "Eight finalist teams compete for $10,000 at Demo Day."
         },
         {
           "key": "office-hours",
           "label": "Office Hours for Builders",
-          "text": ""
+          "text": "Drop-in time with the team while you build."
         }
       ]
     },
     "timeline": {
       "heading": "Timeline",
-      "lede": "From info session to Demo Day — here's what a semester in HSC looks like.",
+      "lede": "From info session to Demo Day — here's what a semester in Spark looks like.",
       "items": [
         {
           "key": "info",

@@ -196,7 +196,7 @@
 .p-timeline h3 { font-size: clamp(1.25rem, 2.5vw, 2.25rem); font-weight: 700; line-height: 1.15; }
 .p-timeline p { margin-top: 0.5rem; font-size: var(--fs-body); line-height: 1.35; }
 
-/* ---- Split (HSC -> Bolt & Spark) ---- */
+/* ---- Split (HSC -> Spark & Bolt) ---- */
 .p-split {
   margin-top: clamp(1.75rem, 4vw, 3rem);
   display: grid;

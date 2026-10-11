@@ -7,18 +7,18 @@
   },
   "sections": {
     "tracks": {
-      "heading": "Bolt & Spark",
+      "heading": "Spark & Bolt",
       "lede": "",
       "items": [
         {
-          "key": "bolt",
-          "label": "Bolt",
-          "text": "For founders with traction"
-        },
-        {
           "key": "spark",
           "label": "Spark",
-          "text": "For students just getting started"
+          "text": "Open to everyone, no application"
+        },
+        {
+          "key": "bolt",
+          "label": "Bolt",
+          "text": "For ventures with traction or funding"
         }
       ]
     },

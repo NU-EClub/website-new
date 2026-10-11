@@ -106,7 +106,8 @@ function Timeline({ section }) {
   );
 }
 
-/* HSC's "Bolt & Spark" band: the umbrella pointing at its two tracks. */
+/* HSC's "Spark & Bolt" band: the umbrella pointing at its two tracks.
+ * Spark always leads -- it is the early-stage entry point, Bolt the later one. */
 function Split({ section }) {
   return (
     <section className={`p-band p-band--${section.tone}`}>

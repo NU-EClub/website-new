@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { asset } from '../lib/asset.js';
-import { FOOTER } from '../data/site.js';
+import { FOOTER, SITE_NAME } from '../data/site.js';
 import './Footer.css';
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="site-footer__meta">
           <Link className="site-footer__brand" to="/">
             <img src={asset('logo-mark.png')} alt="" width="57" height="59" />
-            <span>Entrepreneurs Club</span>
+            <span>{SITE_NAME}</span>
           </Link>
           <p className="site-footer__org">{FOOTER.org}</p>
         </div>

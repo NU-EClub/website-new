@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { NAV_PROGRAMS } from '../data/programs.js';
 import { asset } from '../lib/asset.js';
+import { SITE_NAME, SOCIAL } from '../data/site.js';
 import './Header.css';
 
 const LINKS = [
@@ -41,7 +42,7 @@ export default function Header() {
             width="57"
             height="59"
           />
-          <span className="site-header__wordmark">Entrepreneurs Club</span>
+          <span className="site-header__wordmark">{SITE_NAME}</span>
         </Link>
 
         <nav className="site-nav" aria-label="Primary">
@@ -83,10 +84,10 @@ export default function Header() {
         </nav>
 
         <div className="site-header__social">
-          <a href="https://www.instagram.com/nueclub/" aria-label="Instagram">
+          <a href={SOCIAL.instagram} aria-label="Instagram">
             <img src={asset('icon-instagram.svg')} alt="" width="24" height="24" />
           </a>
-          <a href="https://www.linkedin.com/company/nueclub/" aria-label="LinkedIn">
+          <a href={SOCIAL.linkedin} aria-label="LinkedIn">
             <img src={asset('icon-linkedin.svg')} alt="" width="24" height="24" />
           </a>
         </div>

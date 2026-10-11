@@ -1,9 +1,9 @@
 {
   "title": "Nexus",
-  "lede": "Events, workshops, and community for anyone curious about entrepreneurship — no application, no commitment required.",
+  "lede": "Workshops, fireside chats, and events for anyone curious about startups — no application, no semester-long commitment.",
   "mission": {
     "heading": "The On-Ramp to Everything Else",
-    "body": "Plenty of students are curious about entrepreneurship but aren't ready for a semester-long program yet. Nexus gives them a way in.\n\nIt's also where founders in Spark and Bolt come to network and get wider exposure."
+    "body": "If you don't want to commit to a semester-long program but you're still curious about startups, or you want to expand your network, Nexus is where to start.\n\nIt's also where founders in Spark and Bolt come to network and get wider exposure."
   },
   "sections": {
     "our-events": {
@@ -13,22 +13,22 @@
         {
           "key": "workshops",
           "label": "Workshops & Panels",
-          "text": ""
+          "text": "Hands-on sessions and fireside chats, open to everyone."
         },
         {
           "key": "networking",
           "label": "Networking Events",
-          "text": ""
+          "text": "Meet other founders, students, and people already building."
         },
         {
           "key": "hackathon",
           "label": "Ideation Hackathon",
-          "text": ""
+          "text": "Go from a blank page to an idea worth pursuing in a day."
         },
         {
           "key": "pitch",
           "label": "Pitch Competition",
-          "text": ""
+          "text": "Put an early idea in front of a room and see how it holds up."
         }
       ]
     },

@@ -20,6 +20,7 @@ content:
     path: content/site.json
     format: json
     fields:
+      - { name: name, label: "Club name", type: string }
       - name: hero
         label: Homepage hero
         type: object
@@ -41,6 +42,12 @@ content:
           - { name: lede, label: "Lede", type: text }
       - { name: newsTitle, label: "News heading", type: string }
       - { name: calendarTitle, label: "Calendar heading", type: string }
+      - name: social
+        label: "Social links"
+        type: object
+        fields:
+          - { name: instagram, label: "Instagram URL", type: string }
+          - { name: linkedin, label: "LinkedIn URL", type: string }
       - name: footer
         label: Footer
         type: object
@@ -109,7 +116,7 @@ content:
         type: object
         fields:
           - name: tracks
-            label: "Bolt and Spark band"
+            label: "Spark and Bolt band"
             type: object
             fields:
               - { name: heading, label: "Heading", type: string }

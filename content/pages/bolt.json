@@ -1,9 +1,9 @@
 {
   "title": "Bolt",
-  "lede": "Northeastern's premier startup accelerator — built for founders who've already proven there's something real.",
+  "lede": "A semester-long, batch-based startup accelerator for ventures that already have traction or funding.",
   "mission": {
-    "heading": "Why it's exclusive",
-    "body": "Founders apply and interview for a spot. Only a small cohort is admitted each cycle. That selectivity means that every conversation is high signal and the network you walk away with is one worth having."
+    "heading": "Not lecture-based",
+    "body": "Bolt is about helping you as a founder set and achieve goals for your venture, not sitting through lectures. You meet biweekly with your cohort and have office hours with the directors.\n\nFounders apply and interview for a spot, and only a small cohort is admitted each cycle. That selectivity means every conversation is high signal and the network you walk away with is one worth having."
   },
   "sections": {
     "criteria": {
@@ -38,33 +38,33 @@
       "items": [
         {
           "key": "sessions",
-          "label": "Biweekly Learning Sessions",
-          "text": ""
+          "label": "Biweekly Cohort Meetings",
+          "text": "Work through goals alongside the other ventures in your batch."
         },
         {
           "key": "office-hours",
           "label": "Office Hours with Directors",
-          "text": ""
+          "text": "Direct time with the program directors."
         },
         {
           "key": "speakers",
           "label": "Speaker Series",
-          "text": ""
+          "text": "Sessions with founders and investors relevant to what you are building."
         },
         {
           "key": "grants",
           "label": "Cash Grants",
-          "text": ""
+          "text": "Funding to put toward your venture."
         },
         {
           "key": "mentors",
           "label": "Mentor Network",
-          "text": ""
+          "text": "Directors include exited founders, former VC co-ops, and a Z Fellow."
         },
         {
           "key": "demo-day",
-          "label": "Demo Day / Capstone Showcase",
-          "text": ""
+          "label": "A Separate Demo Day",
+          "text": "Reserved seats for industry professionals, VCs, and founders relevant to your venture — with interest already from firms like Glasswing, Underscore, and Offscript."
         }
       ]
     }

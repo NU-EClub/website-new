@@ -1,7 +1,27 @@
 [
-  { "slug": "hsc", "name": "Husky Startup Challenge", "blurb": "Northeastern's pitch competition for first-time founders" },
-  { "slug": "spark", "name": "Spark", "blurb": "A foundation for students just starting to explore" },
-  { "slug": "bolt", "name": "Bolt", "blurb": "A selective accelerator for founders with real traction" },
-  { "slug": "nexus", "name": "Nexus", "blurb": "Events and community for the curious and connected" },
-  { "slug": "founder-circle", "name": "Founder Circle", "blurb": "Ongoing mentorship for our founder alumni network" }
+  {
+    "slug": "hsc",
+    "name": "Husky Startup Challenge",
+    "blurb": "Northeastern's pitch competition for first-time founders"
+  },
+  {
+    "slug": "spark",
+    "name": "Spark",
+    "blurb": "A semester-long startup incubator and pitch competition — no application, no experience needed"
+  },
+  {
+    "slug": "bolt",
+    "name": "Bolt",
+    "blurb": "A batch-based accelerator for ventures that already have traction or funding"
+  },
+  {
+    "slug": "nexus",
+    "name": "Nexus",
+    "blurb": "Workshops, fireside chats, and events for anyone curious — no semester-long commitment"
+  },
+  {
+    "slug": "founder-circle",
+    "name": "Founder Circle",
+    "blurb": "Ongoing mentorship for our founder alumni network"
+  }
 ]
