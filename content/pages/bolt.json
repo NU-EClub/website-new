@@ -3,34 +3,28 @@
   "lede": "A semester-long, batch-based startup accelerator for ventures that already have traction or funding.",
   "mission": {
     "heading": "Not lecture-based",
-    "body": "Bolt is about helping you as a founder set and achieve goals for your venture, not sitting through lectures. You meet biweekly with your cohort and have office hours with the directors.\n\nFounders apply and interview for a spot, and only a small cohort is admitted each cycle. That selectivity means every conversation is high signal and the network you walk away with is one worth having."
+    "body": "Bolt is about helping you as a founder set and achieve goals for your venture, not sitting through lectures. You meet biweekly with your cohort and have office hours with the directors.\n\nFounders apply and interview for a spot, and only a small cohort is admitted each cycle. This allows us to leverage our resources and attention to the fullest extent as you work to scale your company."
   },
   "sections": {
     "criteria": {
       "heading": "Who We're Looking For",
-      "lede": "",
       "items": [
         {
-          "label": "An active, growing user base",
-          "text": ""
+          "label": "An active, growing user base"
         },
         {
-          "label": "Revenue, even early or small",
-          "text": ""
+          "label": "Revenue, even early or small"
         },
         {
-          "label": "Outside funding — pre-seed, seed or grants",
-          "text": ""
+          "label": "Outside funding — pre-seed, seed or grants"
         },
         {
-          "label": "Strong traction in a pilot, partnership, or beta",
-          "text": ""
+          "label": "Strong traction in a pilot, partnership, or beta"
         }
       ]
     },
     "provide": {
       "heading": "What We Provide",
-      "lede": "",
       "items": [
         {
           "label": "Biweekly Cohort Meetings",
